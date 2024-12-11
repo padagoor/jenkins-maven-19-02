@@ -1,1 +1,36 @@
+Install Java root folder
 
+sudo amazon-linux-extras install java-openjdk11
+
+------------------------------------------------------------------------------------
+4. Install maven for build
+    1. cd /opt
+	2. wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip
+	3. unzip apache-maven-3.9.6-bin.zip
+	4. rm -rf apache-maven-3.9.6-bin.zip
+	5. mv apache-maven-3.9.6/ maven
+	
+5. Configure path variable " echo $PATH" to add java_home  and maven_home
+
+==> cd ==> ls -la ==> nano .bash_profile
+
+add below code to bash_profile file
+
+M2_HOME=/opt/maven
+M2=/opt/maven/bin
+JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto.x86_64
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2_HOME:$M2
+
+export PATH
+=======================================================================
+restart bash_profile using below command
+
+==> source .bash_profile
+==> echo $PATH
+
+Now - check mvn --version --> from any where
+
+------------------------------------------------------------------------------------------------------------
