@@ -1,1 +1,3 @@
-
+Check OS Version EC2 - 
+cat /etc/system-release
+cat /etc/os-release
