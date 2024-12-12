@@ -57,4 +57,12 @@ user Redhat linux code to install jenkins ( based on the user requirment select 
 Check OS Version EC2 - cat /etc/os-release
 
 Once release complete run #jenkins status
+sudo yum install jenkins
+sudo systemctl daemon-reload
+
 #service jenkins start
+
+
+sudo systemctl start jenkins or service jenkins start
+sudo systemctl enable jenkins  --> create symlink so user no need to start jenkins every time , it will start auto when ec2 server start
+sudo systemctl status jenkins
