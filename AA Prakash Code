@@ -1,3 +1,5 @@
+Check OS Version EC2 - cat /etc/system-release
+
 Install Java root folder
 
 sudo amazon-linux-extras install java-openjdk11
@@ -34,3 +36,12 @@ restart bash_profile using below command
 Now - check mvn --version --> from any where
 
 ------------------------------------------------------------------------------------------------------------
+
+Remove Java 11 and Install Java 17
+
+sudo yum remove java*
+
+Get all the Java list release versions 
+yum list java*
+
+sudo yum Install <pachake_name> - sudo yum install java-17-amazon-corretto.x86_64 
