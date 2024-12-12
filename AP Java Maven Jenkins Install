@@ -45,3 +45,16 @@ Get all the Java list release versions
 yum list java*
 
 sudo yum Install <pachake_name> - sudo yum install java-17-amazon-corretto.x86_64 
+
+********************************************************************************************************
+
+************************************************************************************************
+Install Jenkins 
+visit jenkins.io -> hardware and software requirement link
+
+user Redhat linux code to install jenkins ( based on the user requirment select the OS )
+
+Check OS Version EC2 - cat /etc/os-release
+
+Once release complete run #jenkins status
+#service jenkins start
