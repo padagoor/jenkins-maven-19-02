@@ -10,7 +10,7 @@ sudo amazon-linux-extras install java-openjdk11
 	2. wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip
 	3. unzip apache-maven-3.9.6-bin.zip
 	4. rm -rf apache-maven-3.9.6-bin.zip
-	5. mv apache-maven-3.9.6/ maven
+	5. mv apache-maven-3.9.6/ maven -- change name to maven
 	
 5. Configure path variable " echo $PATH" to add java_home  and maven_home
 
