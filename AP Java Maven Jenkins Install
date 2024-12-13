@@ -66,3 +66,6 @@ sudo systemctl daemon-reload
 sudo systemctl start jenkins or service jenkins start
 sudo systemctl enable jenkins  --> create symlink so user no need to start jenkins every time , it will start auto when ec2 server start
 sudo systemctl status jenkins
+
+First time jenkins start password 
+#cat /var/lib/jenkins/secrets/initialAdminPassword   --> first login only - later user can change password
