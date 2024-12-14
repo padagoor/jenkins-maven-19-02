@@ -1,4 +1,5 @@
-Intsll pluin - build pipeline plugin -> it will display tages of executions in jenkins
+Intsll pluin - pipeline stage view -> it will display tages of executions in jenkins
+Intsll pluin - build pipeline plugin 
 
 pipeline {
     agent any 
