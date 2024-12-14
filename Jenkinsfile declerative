@@ -26,3 +26,28 @@ pipeline {
         }
     }
 }
+
+*************************************************
+
+Reduce the Stages in Pipeline
+
+pipeline {
+    agent any
+    tools {
+          maven 'maven_home'
+        }
+
+    stages {
+        stage('SCM-Checkout') {
+            steps {
+                git branch: 'New-Main', credentialsId: 'git-credentials',
+                url: 'https://github.com/padagoor/Git-Maven-Integ.git'
+            }
+        }
+        stage('Maven-Steps') {
+            steps {
+                sh 'mvn clean compile test package'
+            }
+        }
+}
+}
